@@ -1,3 +1,5 @@
+const publicAsset = (fileName) => `${import.meta.env.BASE_URL}${fileName}`;
+
 export const content = {
   es: {
     meta: { title: 'Luis Felipe Anaya | Portafolio', description: 'Portafolio de Luis Felipe Anaya, estudiante de Ingeniería de Software y desarrollador Full Stack con experiencia en Android, backend e inteligencia artificial aplicada.' },
@@ -52,7 +54,7 @@ en desarrollo Full Stack, Android, backend e IA aplicada.
       { tag: 'ANDROID', title: 'Automatización y control móvil', desc: 'Aplicaciones Android nativas con gestos personalizados, servicios en segundo plano, interfaces flotantes y automatización del sistema mediante AccessibilityService.', tech: ['Kotlin', 'Jetpack Compose', 'MVVM', 'AccessibilityService'] },
       { tag: 'IA Y BACKEND', title: 'Plataforma RAG de documentos', desc: 'Servicios backend para ingesta, procesamiento y recuperación semántica de documentos, integrando modelos de IA, OCR y una base de datos vectorial.', tech: ['Python', 'FastAPI', 'OpenAI API', 'LangChain', 'Tesseract', 'Milvus'] },
     ] },
-    contact: { label: '¿Hablamos?', title: 'Contacto', copy: 'Copiar correo', copied: '¡Copiado!', download: 'Descargar CV', cvPath: '/Luis_Felipe_Anaya_Parada_CV.pdf', cvName: 'Luis_Felipe_Anaya_Parada_CV_ES.pdf' }, footer: 'Todos los derechos reservados.',
+    contact: { label: '¿Hablamos?', title: 'Contacto', copy: 'Copiar correo', copied: '¡Copiado!', download: 'Descargar CV', cvPath: publicAsset('Luis_Felipe_Anaya_Parada_CV.pdf'), cvName: 'Luis_Felipe_Anaya_Parada_CV_ES.pdf' }, footer: 'Todos los derechos reservados.',
   },
   en: {
     meta: { title: 'Luis Felipe Anaya | Portfolio', description: 'Portfolio of Luis Felipe Anaya, Software Engineering student and Full-Stack Developer experienced in Android, backend development, and applied artificial intelligence.' },
@@ -107,7 +109,7 @@ Android, backend development, and applied AI.
       { tag: 'ANDROID', title: 'Mobile automation and control', desc: 'Native Android applications featuring custom gestures, background services, floating interfaces, and system automation through AccessibilityService.', tech: ['Kotlin', 'Jetpack Compose', 'MVVM', 'AccessibilityService'] },
       { tag: 'AI & BACKEND', title: 'Document RAG platform', desc: 'Backend services for document ingestion, processing, and semantic retrieval, integrating AI models, OCR, and a vector database.', tech: ['Python', 'FastAPI', 'OpenAI API', 'LangChain', 'Tesseract', 'Milvus'] },
     ] },
-    contact: { label: 'Let’s talk', title: 'Contact', copy: 'Copy email', copied: 'Copied!', download: 'Download résumé', cvPath: '/Luis_Felipe_Anaya_Parada_CV_EN.pdf', cvName: 'Luis_Felipe_Anaya_Parada_CV_EN.pdf' }, footer: 'All rights reserved.',
+    contact: { label: 'Let’s talk', title: 'Contact', copy: 'Copy email', copied: 'Copied!', download: 'Download résumé', cvPath: publicAsset('Luis_Felipe_Anaya_Parada_CV_EN.pdf'), cvName: 'Luis_Felipe_Anaya_Parada_CV_EN.pdf' }, footer: 'All rights reserved.',
   },
 };
 
